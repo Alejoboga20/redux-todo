@@ -20,7 +20,7 @@ input:focus {
 }
 
 button {
-  margin: 8px;
+  margin-right: 8px;
   background-color: rgb(214, 213, 213);
   border: none;
   border-radius: 10px;

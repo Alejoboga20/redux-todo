@@ -4,7 +4,9 @@ import './Input.css';
 const Input = () => {
   const [input, setInput] = useState('');
 
-  const addTodo = () => {};
+  const addTodo = () => {
+    console.log('click');
+  };
 
   return (
     <div className='input'>
