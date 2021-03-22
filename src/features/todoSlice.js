@@ -1,3 +1,4 @@
+import { Select } from '@material-ui/core';
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -15,4 +16,5 @@ const todoSlice = createSlice({
 });
 
 export const { saveTodo } = todoSlice.actions;
+export const selectTodoList = (state) => state.todos.todoList;
 export default todoSlice.reducer;
