@@ -17,6 +17,8 @@ const Input = () => {
         id: Date.now(),
       })
     );
+
+    setInput('');
   };
 
   return (
