@@ -1,6 +1,7 @@
 import React from 'react';
 import Input from './components/Input';
 import TodoItem from './components/TodoItem';
+import BigButton from './components/BigButton';
 import { useSelector } from 'react-redux';
 import { selectTodoList } from './features/todoSlice';
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
           ))}
         </div>
         <Input />
+        <BigButton name='Clear All' />
       </div>
     </div>
   );

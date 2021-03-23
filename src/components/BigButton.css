@@ -7,6 +7,8 @@
 }
 
 .BigButton {
+  background-color: rgb(230, 209, 237);
   flex: 1;
   margin-left: 12px;
+  height: 30px;
 }
