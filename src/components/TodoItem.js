@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setCheck, deleteTodo } from '../features/todoSlice';
+import { setCheck } from '../features/todoSlice';
 import { Checkbox } from '@material-ui/core';
 import './TodoItem.css';
 
@@ -9,10 +9,6 @@ const TodoItem = ({ name, done, id }) => {
 
   const handleCheck = () => {
     dispatch(setCheck(id));
-  };
-
-  const handleDelete = () => {
-    dispatch(deleteTodo(id));
   };
 
   return (
@@ -24,7 +20,6 @@ const TodoItem = ({ name, done, id }) => {
         inputProps={{ 'aria-label': 'secondary checkbox' }}
       />
       <p className={done && 'todoItem--done'}>{name}</p>
-      <button onClick={handleDelete}>delete</button>
     </div>
   );
 };
