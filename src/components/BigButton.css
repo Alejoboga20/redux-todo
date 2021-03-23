@@ -1,0 +1,12 @@
+.BigButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 80%;
+}
+
+.BigButton {
+  flex: 1;
+  margin-left: 12px;
+}
